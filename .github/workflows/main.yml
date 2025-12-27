@@ -1,1 +1,24 @@
+# Update system
+winget upgrade --all
 
+# Install required software
+winget install Git.Git
+winget install Gyan.FFmpeg
+winget install ImageMagick.ImageMagick
+winget install OpenJS.NodeJS.LTS
+
+# IMPORTANT: Restart PowerShell before proceeding
+# Press Ctrl+C to stop, then reopen PowerShell as Administrator
+
+# Clone repository
+git clone https://github.com/superstar-zimtk/Pretty-md.git
+cd Pretty-md
+
+# Install dependencies
+npm install
+
+# Configure environment
+npm run setup
+
+# Start bot
+npm start
